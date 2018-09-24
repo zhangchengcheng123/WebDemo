@@ -1,0 +1,26 @@
+<h2>
+  正在进行<span>{{arr.length-counter}}</span>
+</h2>
+<ul >
+  <ng-container *ngFor="let item of arr;let i = index;">
+      <li *ngIf="!item.done" style="list-style:none">
+          <input (click)="change(i)" type="checkbox">
+          {{item.title}}
+          <button (click)="del(i)">删除</button>
+      </li>
+  </ng-container>
+</ul>
+<h2>
+  已经完成<span>{{counter}}</span>
+</h2>
+<ul>
+<ng-container *ngFor="let item of arr;let i = index;">
+  <li *ngIf="item.done" style="list-style:none">
+      <input (click)="change(i)" type="checkbox">
+      {{item.title}}
+      <button (click)="del(i)">删除</button>
+  </li>
+</ng-container>
+</ul>
+
+
