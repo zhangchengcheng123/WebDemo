@@ -12,11 +12,11 @@ constructor(){ }
  ngOnInit(){
   
   }
-  // @Input() arr;
-  // @Output() delIndex= new EventEmitter();
-  // del(i){
-  //   this.delIndex.emit(i);
-  // }
+  @Input() arr;
+  @Output() delIndex= new EventEmitter();
+  del(i){
+    this.delIndex.emit(i);
+  }
   // index=0;
   // log(msg){
   //   console.log(`这是第${this.index++}次调用,调用的钩子函数是${msg}`);

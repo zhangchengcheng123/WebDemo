@@ -1,0 +1,38 @@
+p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+img{
+    margin-left: 20px;
+}
+input{
+    margin-left: 20px;
+    height: 300px;
+    width: 770px;
+}
+span{
+    margin: 20px;
+    color: gray;
+}
+button{
+    float: right;
+    background-color: #ff6e3f;
+    margin-right: 10px;
+}
+.nav{
+    height: 50px;
+}
+.nav ul li{
+    float: left;
+    margin-top:35px;;
+    margin-left: 40px;
+}
+a{
+    font-size: 15px;
+    color: black;
+}
+#tj a{
+    color: #ff6e3f;
+}
+

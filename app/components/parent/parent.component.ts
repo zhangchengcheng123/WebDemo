@@ -1,15 +1,19 @@
-// import { Component, OnInit } from '@angular/core';
-// import { CommonService } from 'src/app/services/common.service';
+import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/services/common.service';
+import { ShareService } from 'src/app/services/share.service';
 
-// @Component({
-//   selector: 'app-parent',
-//   templateUrl: './parent.component.html',
-//   styleUrls: ['./parent.component.css']
-// })
-// export class ParentComponent implements OnInit {
-//   constructor(private local:CommonService) { 
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.css'],
+  providers:[ShareService]
+})
+export class ParentComponent implements OnInit {
 
-//   }
+  constructor(private share:ShareService) { }
+  add(){
+    this.share.add(100);
+}  
 //   arr:string[]=[];
 //   add(eve){
 //       this.arr.push(eve)
@@ -18,47 +22,20 @@
 //   data;
 //   data1=['a','b','c'];
 //   del(i){
-//     this.data.splice(i,1);
-//     this.local.set('list',this.data);
+//     this.data1.splice(i,1);
+//     this.local.set('l',this.data1);
 //   }
-//   ngOnInit() {
-//     if(this.local.get("list")){
-//       this.data1=this.local.get("list").split(',');
-//     }else{
-//       this.data1=['1','2','3','4','5','6','7'];
-//     }
-//   }
+  ngOnInit() {
+    // if(this.local.get("l")){
+    //   this.data1=this.local.get("l").split(',');
+    // }else{
+    //   this.data1=['1','2','3','4','5','6','7'];
+    // }
+  }
+  //   setTimeout(()=>{this.data=this.data1},3000)
+  //   setInterval(()=>{
+  //     this.data.push(2)
+  //   },1000);
+  // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   //   setTimeout(()=>{this.data=this.data1},3000)
-//   //   setInterval(()=>{
-//   //     this.data.push(2)
-//   //   },1000);
-//   // }
-
-// }
+}

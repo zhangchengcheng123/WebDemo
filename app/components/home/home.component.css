@@ -1,0 +1,36 @@
+.nav{
+    height: 500px;
+    width: 200px;
+    margin-left:160px;
+    margin-top: 20px;
+}
+.photo>img{
+    margin-left: 15px;
+}
+p{
+    font-size: 18px;
+    text-align: center;
+}
+.num{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+}
+.num li{
+    float: left;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.list li{
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.list li a{
+    padding: 8px 50px;
+    color: black;
+}
+.list li a:hover{
+    text-decoration:none; 
+    background:#ffece6;
+}

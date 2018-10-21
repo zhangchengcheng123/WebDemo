@@ -1,4 +1,5 @@
 import { Component, OnInit, Input ,EventEmitter,Output,SimpleChanges } from '@angular/core';
+import { ShareService } from 'src/app/services/share.service';
 
 @Component({
   selector: 'app-child1',
@@ -6,21 +7,11 @@ import { Component, OnInit, Input ,EventEmitter,Output,SimpleChanges } from '@an
   styleUrls: ['./child1.component.css']
 })
 export class Child1Component implements OnInit {
-//  @Output() addEvent=new EventEmitter();
-//  txt:string;
-//  getValue(e){
-//   if(e.keyCode==13){
-//     this.add(this.txt);
-//     this.txt="" 
-//   }
-//  }
-//   add(eve){
-//       this.addEvent.emit(eve)
-//   }
- 
-  constructor() { }
 
+  constructor(private share:ShareService) { }
+  arr;
   ngOnInit() {
+    this.arr=this.share.data;
   }
 
 }

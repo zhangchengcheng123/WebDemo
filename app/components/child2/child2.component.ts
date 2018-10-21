@@ -15,7 +15,7 @@ export class Child2Component implements OnInit {
    }
   }
    add(eve){
-       this.addEvent.emit(eve)
+       this.addEvent.emit(eve);
    }
   constructor() { }
 

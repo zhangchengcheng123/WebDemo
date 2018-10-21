@@ -1,5 +1,5 @@
 <h2>
-  正在进行<span>{{arr.length-counter}}</span>
+  正在进行<ng-container select=".ing"></ng-container>
 </h2>
 <ul >
   <ng-container *ngFor="let item of arr;let i = index;">
@@ -11,7 +11,7 @@
   </ng-container>
 </ul>
 <h2>
-  已经完成<span>{{counter}}</span>
+  已经完成<ng-container select=".over"></ng-container>
 </h2>
 <ul>
 <ng-container *ngFor="let item of arr;let i = index;">

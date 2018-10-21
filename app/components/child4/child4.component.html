@@ -1,0 +1,86 @@
+<!-- 第一节课的内容 -->
+
+
+<!-- 差值表达式 -->
+<!-- {{title}}
+<h3 [innerHTML]="tilte"></h3>
+<button (keydown)="fun($event)" *ngIf="20>10">点击</button>
+<button (click)="fun()" *ngIf="20>10">点击</button>
+<input type="text" [(ngModel)]="txt">
+<ul>
+  <li *ngFor="let  item of arr"> 
+    <li *ngFor="let  item of arr;let i =index ">
+    <input type="checkbox">这是第{{item}}个,下标是{{i}}
+    <button (click)="del()">删除</button>
+  </li>
+</ul> -->
+
+<!-- <input type="text" placeholder="添加ToDo" [(ngModel)]='txt' (keyup)="fun($event)"/>
+<h1>{{title1}}</h1>
+<ul>
+  <li *ngFor="let item1 of arr1"> 
+    <input type="checkbox" (click)='f1($event,index)'>{{item1}}
+      <button (click)="del1()">删除</button>
+  </li>
+</ul>
+<h1>{{title2}}</h1>
+<ul>
+  <li *ngFor="let item2 of arr2"> 
+    <input type="checkbox" (click)='f2($event)'>{{item2}}
+    <button (click)="del2()">删除</button>
+  </li>
+</ul> -->
+
+
+
+<!--传进事件对象 -->
+ <!-- <input type="text" [(ngModel)]='txt' (keydown)="getValue($event)"/>
+<h3>正在进行<span>{{arr.length-counter}}</span></h3>
+<ul> -->
+  <!-- ng-container不是div也不是span只是一个标签 -->
+  <!-- <ng-container *ngFor="let item of arr;let i=index">
+      <li *ngIf="!item.done">
+          <input type="checkbox" (click)="change(i)"> -->
+        <!-- <input type="checkbox" > -->
+        <!-- 改为object后，应改为intem.title -->
+        <!-- {{item.title}} -->
+        <!-- 删除按钮绑定点击事件 -->
+        <!-- 吧点击的事件函数穿过去 -->
+        <!-- <button (click)="del(i)">删除</button>
+      </li>
+  </ng-container>
+</ul>
+<h3>已经完成<span>{{counter}}</span></h3>
+<ul>
+    <ul>
+        <ng-container *ngFor="let item of arr;let i=index">
+            <li *ngIf="item.done">
+                <input checked="checked" type="checkbox" (click)="change(i)"> -->
+              <!-- <input type="checkbox" > -->
+              <!-- 改为object后，应改为intem.title -->
+              <!-- {{item.title}} -->
+              <!-- 删除按钮绑定点击事件 -->
+              <!-- 吧点击的事件函数穿过去 -->
+              <!-- <button (click)="del(i)">删除</button>
+            </li>
+        </ng-container>
+      </ul> -->
+  <!-- <li *ngFor="let item of arr1;let i=index">
+    <!-- 默认是勾选 -->
+      <!-- <input checked="checked" type="checkbox" (click)="return(i)">
+      {{item}}
+      <button (click)="del(i)">删除</button>
+  </li>--> 
+  <!-- <li *ngFor="let item of arr;let i=index">
+      <div *ngIf="!item.done">
+          <input type="checkbox" (click)="change(i)">
+          <!-- <input type="checkbox" > -->
+          <!-- 改为object后，应改为intem.title -->
+          <!-- {{item.title}} -->
+          <!-- 删除按钮绑定点击事件 -->
+          <!-- 吧点击的事件函数穿过去 -->
+          <!-- <button (click)="del(i)">删除</button> -->
+      <!-- </div> -->
+    <!-- </li> -->
+<!-- </ul>  -->
+<p>
