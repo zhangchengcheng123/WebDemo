@@ -1,0 +1,44 @@
+page-onload {
+    ion-content{
+        background:url(../assets/imgs/onload.png);
+        background-size: cover;
+    }
+    .img{
+        margin: 40px 130px;
+        height: 100px;
+        width: 100px;
+    }
+    .box{
+        ion-item{
+            background:transparent;
+        }   
+    }
+    .button{
+        width:100%;
+        margin: 50px 0;
+    }
+    .or{
+        color: #eee;
+        text-align: center;
+    }
+    ul li{
+        list-style:none;
+        float: left;
+        width: 100px;
+        margin-left: px;
+    }
+    ul li img{
+        height: 60px;
+        width: 60px;
+        margin: 10px 0;
+    }
+    .sina img{
+        border-radius: 50%
+    }
+    p{
+        color:#eee;
+        span{
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+page-contact {
+    ul{
+        padding: 0;
+        li{
+            list-style: none;
+            padding: 0;
+            position: relative;
+            width: 100%;
+           .img{
+                position: absolute;
+                width: 100%;
+                top:50px;
+                margin: 0;
+                color: #fff;
+                height: 200px;
+                width: 200px;
+                text-align: center;  
+                margin-left: 80px;
+                opacity: 0.8;
+           }
+           p{
+            position: absolute;
+            width: 100%;
+            color: #fff;
+            height: 100px;
+            line-height: 100px;
+            margin: 0;
+            text-align: center;
+           }
+            .p1{
+                bottom:90px;
+                font-size: 20px;
+            }
+            .p2{
+                bottom:70px;
+                font-size: 20px;
+                padding: 10px;
+            }
+            .p3{
+                bottom:50px;
+                font-size: 10px;
+                padding: 15px;
+            }
+        }
+    }
+}

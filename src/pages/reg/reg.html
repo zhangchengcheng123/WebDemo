@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-title>注册</ion-title>
+</ion-header>
+<ion-content>
+ <div class="box">
+      <ion-item>
+        <ion-icon ios="ios-phone-portrait" md="md-phone-portrait" item-start></ion-icon>
+        <ion-input placeholder="手机号"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-icon ios="ios-key" md="md-key" item-start></ion-icon>
+        <ion-input type="number" placeholder="验证码"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon ios="ios-lock" md="md-lock" item-start></ion-icon>
+        <ion-input type="password" placeholder="密码"></ion-input>
+      </ion-item>
+      <button ion-button color="yel" (click)="goOnload()">注册</button>
+      <p (click)="goOnload()">已有账号？立即登录</p>
+  </div>
+</ion-content>
