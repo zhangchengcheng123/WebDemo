@@ -1,0 +1,22 @@
+page-reg {
+    ion-title{
+        text-align: center;
+        margin-top: 20px;
+    }
+     ion-content{
+        background:url(../assets/imgs/zbg.png);
+        background-size: cover;
+    }
+    .box{
+       ion-item{
+           background:transparent;
+       }
+    }
+    button{
+        width:100%;
+    }
+    p{
+        color: #eeeeee;
+        text-align: center;
+    }
+}

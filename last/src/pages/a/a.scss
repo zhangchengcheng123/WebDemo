@@ -1,0 +1,50 @@
+page-a {
+    ion-content{
+        .titck{
+            height: 50px;
+            line-height: 50px;
+            background: #eeeeee;
+            margin-left: 5px;
+        }
+        .titck span{
+            color: gray;
+            float: right;
+        }
+        img{
+            height: 40px;
+            width: 40px;
+        }
+        .first{
+            padding: 0px;
+            margin: 0px; 
+        }
+        .first li{
+            background: white;
+            margin-left: 2px;
+            height: 100px;
+            width: 117px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .second{
+            padding: 0px;
+            margin: 0px;
+        }
+        .second li{
+            background: white;
+            margin: 3px;
+            height: 100px;
+            width: 173px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            padding-top: 20px;
+        }
+        ul li div{
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+}
