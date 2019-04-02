@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App'
-import AuthExample from './auth/AuthExample' 
-// import CustomLink from './containers/CustomLink'  
+import App from './App';
+import AuthExample from './auth/AuthExample' ;
+// import CustomLink from './containers/CustomLink';  
  
-import Counter from './Counter'
-import TodoList from './TodoList'
+import Counter from './Counter';
+import TodoList from './TodoList';
+import {Provider} from 'react-redux';
+import store from './store';
 
 
 ReactDOM.render(
-  <div style={{padding:'30px'}}>
+  <Provider store={store}>
     <Counter />
     <TodoList />
-  </div>,
+  </Provider>,
   document.getElementById('root')
 );
 

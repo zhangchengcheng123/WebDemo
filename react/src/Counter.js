@@ -5,10 +5,7 @@ import store from './store';
 //action是一个对象，描述state的变化
 //Reducer定义了如何响应action描述的state变化
 
-
-console.log(store.getState());
-
-class Counter extends Component {
+export default class Counter extends Component {
     constructor(){
         super();
         this.state={
@@ -56,5 +53,3 @@ class Counter extends Component {
         );
     }
 }
-
-export default Counter;
